@@ -151,7 +151,7 @@ function HomePage() {
   const [savedBooking, setSavedBooking] = useState('')
 
   useEffect(() => {
-    const storedBooking = localStorage.getItem('azure-cove-booking')
+    const storedBooking = localStorage.getItem('jamaica-hilton-hotel-booking')
 
     if (storedBooking) {
       setBookingData(JSON.parse(storedBooking))
@@ -159,7 +159,10 @@ function HomePage() {
   }, [])
 
   useEffect(() => {
-    localStorage.setItem('azure-cove-booking', JSON.stringify(bookingData))
+    localStorage.setItem(
+      'jamaica-hilton-hotel-booking',
+      JSON.stringify(bookingData),
+    )
   }, [bookingData])
 
   const selectedRoom = rooms.find((room) => room.name === bookingData.room) || rooms[0]
@@ -305,7 +308,7 @@ function AboutPage() {
       <div className="about-layout">
         <div className="about-copy">
           <p>
-            Azure Cove Hotel is a boutique seaside destination where every guest is
+            Jamaica Hilton Hotel is a boutique seaside destination where every guest is
             welcomed with thoughtful service and a strong sense of place. Since our
             early beginnings, we have focused on creating restful moments and
             memorable experiences for visitors seeking both luxury and ease.
@@ -319,7 +322,7 @@ function AboutPage() {
         <img
           className="about-image"
           src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80"
-          alt="Azure Cove hotel exterior"
+          alt="Jamaica Hilton hotel exterior"
         />
       </div>
 
@@ -535,7 +538,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-inner">
-        <p>© 2026 Azure Cove Hotel</p>
+        <p>© 2026 Jamaica Hilton Hotel</p>
         <p>Book memorable coastal stays with comfort, care and style.</p>
       </div>
     </footer>

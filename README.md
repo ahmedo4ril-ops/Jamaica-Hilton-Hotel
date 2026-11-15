@@ -2,7 +2,7 @@
 
 ## Project description
 
-Azure Cove Hotel is a responsive React booking website for a boutique coastal hotel. The application includes a welcoming home page, an about section, room listings, and a contact form with validation. It demonstrates reusable components, state management, event handling, and navigation using React Router.
+Jamaica Hilton Hotel is a responsive React booking website for a boutique coastal hotel. The application includes a welcoming home page, an about section, room listings, and a contact form with validation. It demonstrates reusable components, state management, event handling, and navigation using React Router.
 
 ## Technologies used
 
