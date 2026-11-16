@@ -151,7 +151,9 @@ function HomePage() {
   const [savedBooking, setSavedBooking] = useState('')
 
   useEffect(() => {
-    const storedBooking = localStorage.getItem('jamaica-hilton-hotel-booking')
+    const storedBooking =
+      localStorage.getItem('jamaica-hilton-hotel-booking') ||
+      localStorage.getItem('azure-cove-booking')
 
     if (storedBooking) {
       setBookingData(JSON.parse(storedBooking))
